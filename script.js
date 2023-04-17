@@ -134,5 +134,3 @@ function reset() {
     // Clear the guess field
     document.querySelector('#guess').value = '';
 }
-
-// Reveal word
