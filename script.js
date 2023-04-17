@@ -95,6 +95,9 @@ function endgame(result) {
     }
     else {
         document.querySelector('#lose').hidden = false;
+        let revelation = document.querySelector('#revelation');
+        revelation.hidden = false;
+        revelation.innerHTML = "Answer: " + input;
     }
 
     document.querySelector('#guess-submit').disabled = true;
@@ -112,6 +115,7 @@ function reset() {
     // Remove the winner
     document.querySelector('#win').hidden = true;
     document.querySelector('#lose').hidden = true;
+    document.querySelector('#revelation').hidden = true;
 
     // Set variables back
     used_letters = []
