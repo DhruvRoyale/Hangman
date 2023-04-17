@@ -37,7 +37,7 @@
         <div id="input-container">
             <form class="input-form" onsubmit="return false">
                 <div class="form-group mx-sm-3 mb-2">
-                    <input type="text" class="form-control" id="input" placeholder="Enter Phrase" spellcheck="false" autofocus autocomplete="off">
+                    <input type="password" class="form-control" id="input" placeholder="Enter Phrase" spellcheck="false" autofocus autocomplete="off">
                 </div>
                 <button type="submit" class="btn btn-primary mb-2" onclick="makegame()">Submit</button>
             </form>
@@ -96,6 +96,7 @@
             <div class="result">
                 <h1 id="win" hidden>You Win!</h1>
                 <h1 id="lose" hidden>You Lose</h1>
+                <h2 id="revelation" hidden></h2>
             </div>
             <div class="reset-container">
                 <button type="button" class="btn btn-primary mb-2" onclick="reset()">Reset</button>
